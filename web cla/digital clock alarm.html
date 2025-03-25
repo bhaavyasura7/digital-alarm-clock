@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock with Alarm History</title>
+  <link rel="stylesheet" href="digital clock alarm.css">
+</head>
+<body>
+<div class="clock-container">
+  <div class="time" id="time">00:00:00 AM</div>
+  <div class="date" id="date">January 1, 2025</div>
+  <div class="day" id="day">Monday</div>
+</div>
+
+<div class="alarm-container">
+  <input type="time" id="alarmTime" />
+  <input type="text" id="alarmLabel" placeholder="Alarm Name (Optional)" />
+  <input type="date" id="alarmDate" />
+  <select id="alarmTune">
+    <option value="tune1">Alarm Tune 1</option>
+    <option value="tune2">Alarm Tune 2</option>
+    <option value="tune3">Alarm Tune 3</option>
+    <option value="tune4">Alarm Tune 4</option>
+    <option value="tune5">Alarm Tune 5</option>
+  </select>
+  <select id="snoozeTime">
+    <option value="1">1 minute</option>
+    <option value="2">2 minutes</option>
+    <option value="3">3 minutes</option>
+    <option value="5">5 minutes</option>
+    <option value="10">10 minutes</option>
+    <option value="15">15 minutes</option>
+  </select>
+  <button onclick="setAlarm()"> ⏰Set Alarm</button>
+</div>
+
+<div class="side">
+  <div class="alarm-list" id="alarmList">
+    <!-- Active alarms will be listed here -->
+  </div>
+
+  <div class="alarm-history" id="alarmHistory">
+    <h3>Alarm History</h3>
+    <!-- Past triggered alarms will be listed here -->
+  </div>
+</div>
+
+<!-- Toast notification for alarm -->
+<div id="alarmToast" class="toast">
+  <div class="toast-title" id="toastTitle">Alarm!</div>
+  <div id="toastMessage"></div>
+  <div class="toast-buttons">
+    <button class="toast-button stop-button" onclick="stopAlarm()">Stop</button>
+    <button class="toast-button snooze-button" onclick="snoozeCurrentAlarm()">Snooze</button>
+  </div>
+</div>
+
+<audio id="alarmAudio" loop>
+  <source id="audioSource" src="" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script src="digital clock alarm.js"></script>
+</body>
+</html>

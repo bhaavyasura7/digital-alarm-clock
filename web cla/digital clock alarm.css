@@ -1,0 +1,179 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292929; /* Dark background */
+    color: #FFFFFF; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#alarmList {
+    display: inline;
+}
+
+.clock-container {
+    position: sticky;
+    top: 10px;
+    text-align: center;
+    background-color: #333; /* Slightly lighter background for the clock */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF9500; /* Orange color for time */
+}
+
+.date {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ACD964; /* Green color for date */
+}
+
+.day {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #5AC8FA; /* Blue color for day */
+}
+
+.alarm-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alarm-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.alarm-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+.alarm-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #007AFF;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.alarm-container button:hover {
+    background-color: #005BB5;
+}
+
+.alarm-list, .alarm-history {
+    max-height: 400px; /* Limits height */
+    overflow-y: auto; /* Adds scroll within the section */
+    width: 35%;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+    margin: 0 10px;
+}
+
+
+.alarm-list div, .alarm-history div {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.alarm-list div:last-child, .alarm-history div:last-child {
+    border-bottom: none;
+}
+
+.reuse-button,.delete-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-button {
+    background-color: #FF3B30;
+}
+
+.delete-button:hover {
+    background-color: #FF1A1A;
+}
+
+.reuse-button:hover{
+    background-color: #45a049;
+}
+.side {
+display: flex;
+justify-content: space-around;
+width: 100%;
+padding: 20px 0;
+}
+
+/* Toast notification styles */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    max-width: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+.toast-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toast-buttons {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.toast-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.stop-button {
+    background-color: #FF3B30;
+    color: white;
+}
+
+.snooze-button {
+    background-color: #007AFF;
+    color: white;
+}
