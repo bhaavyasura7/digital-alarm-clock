@@ -15,8 +15,8 @@ Alarm Setup:
 
 Alarm List & History:
 	
-	The Active Alarms List displays currently set alarms.
-	The Alarm History records past alarms that have been triggered.
+	The Active Alarms List displays currently set alarms they have option to delete, that means the alarm we have set can be deleted.
+	The Alarm History records past alarms that have been triggered.We have another option in the alarm history, that the alarm can be reused for next one day.
 
 Toast Notification:
 
