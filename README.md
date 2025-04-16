@@ -1,5 +1,5 @@
 # digital-alarm-clock
-This a Digital Clock program with Alarm History. It includes a digital clock that displays the current time, date, and day. Users can set alarms with additional options like selecting an alarm name, date, tune, and snooze duration.
+This a Digital Clock application with Alarm History we can reuse(that means for next 24 hrs). It includes a digital clock that displays the current time, date, and day. Users can set alarms with additional options like selecting a name, date, tune, and snooze duration.
 
 Features:
 
@@ -9,14 +9,14 @@ Clock Display:
 Alarm Setup:
 
 	Users can set an alarm by selecting a time and an optional label.
-	They can choose an alarm date (useful for one-time alarms).
+	They can choose a date (useful for one-time alarms).
 	Different alarm tunes are available.
 	A snooze duration can be set (from 1 to 15 minutes).
 
 Alarm List & History:
 	
-	The Active Alarms List displays currently set alarms they have option to delete, that means the alarm we have set can be deleted.
-	The Alarm History records past alarms that have been triggered.We have another option in the alarm history, that the alarm can be reused for next one day.
+	The Active Alarms List displays currently set alarms, they have option to delete.
+	The Alarm History records past alarms that have been triggered. We have another option in the alarm history, that the alarm can be reused for next one day.
 
 Toast Notification:
 
